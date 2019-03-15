@@ -1,0 +1,182 @@
+/* HEDER */
+.header {
+	background: #24d5c3;
+	background: -moz-linear-gradient(-45deg, #24d5c3 0%, #9d5dea 100%);
+	background: -webkit-linear-gradient(-45deg, #24d5c3 0%,#9d5dea 100%);
+	background: linear-gradient(135deg, #24d5c3 0%,#9d5dea 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24d5c3', endColorstr='#9d5dea',GradientType=1 );
+}
+.title {
+	padding: 140px 0 32px;
+	background: url(/assets/images/icon.png) no-repeat 50% 25%;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+}
+.subTitle {
+	margin: 10px 0 0;
+	font-size: 13px;
+}
+
+/* NAV LIST */
+.navList {
+	overflow: hidden;
+	text-align: center;
+	
+}
+.navList li {
+	display: inline-block;
+	padding: 0 30px;
+	border-bottom: 3px solid #fff;
+	margin-bottom: 4px;
+}
+.navList li a {
+	display: block;
+	margin-bottom: 3px;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+/* LOGIN AREA */
+.loginArea {
+	padding: 15px 0 50px;
+	background: #fff;
+}
+.login {
+	width: 250px;
+	margin: 0 auto;
+	color: #bfbfbf;
+}
+.login label {
+	display: block;
+	margin: 15px 0 0;
+	font-size: 12px;
+	text-align: left;
+}
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="email"] {
+	display: block;
+	width: 100%;
+	margin: 2px 0 0;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+	padding: 14px;
+	outline: none;
+}
+.login input[type="text"]:focus,
+.login input[type="password"]:focus,
+.login input[type="email"]:focus {
+	border-color: #ccc;
+}
+.login input[type="checkbox"]{
+	display: inline;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #bfbfbf;
+	opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #bfbfbf;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #bfbfbf;
+}
+label[for="remember"]{
+	display: inline-block;
+}
+.btnLogin {
+	display: block;
+	margin: 20px 0 0;
+	width: 250px;
+	padding: 14px 0;
+	cursor: pointer;
+	background: #fe8592;
+	background: -moz-linear-gradient(left, #fe8592 1%, #de5d6b 100%);
+	background: -webkit-linear-gradient(left, #fe8592 1%,#de5d6b 100%);
+	background: linear-gradient(to right, #fe8592 1%,#de5d6b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8592', endColorstr='#de5d6b',GradientType=1 );
+	border: 0;
+	border-radius: 25px;
+	color: #fff;
+	text-align: center;
+	outline: none;
+	box-shadow: 0 5px 5px #dfdfdf;
+}
+.btnCancel {
+	display: block;
+	margin: 30px 0 0;
+	text-align: center;
+	text-decoration: none;
+	color: #999;
+}
+.link_forgotPassword {
+	display: block;
+	margin: 25px 0 0;
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+}
+
+.error-message {
+	margin: 10px 0 20px;
+	color: #fb6979;
+}
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+}
+.container:hover input ~ .checkmark {
+	border: 1px solid #f2f2f2;
+}
+.container input:checked ~ .checkmark {
+	background-color: #fff;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+.container .checkmark:after {
+	left: 6px;
+	top: 3px;
+	width: 4px;
+	height: 8px;
+	border: solid #666;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

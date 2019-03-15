@@ -1,0 +1,38 @@
+/* GENERAL */
+*{box-sizing:border-box;}
+html,body{font-size:14px;font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;line-height:1.5;}
+body{min-width:375px!important;}
+.inner{margin:0 auto;max-width:375px;border:1px solid #ddd;box-shadow: 0 0 30px #ddd;}
+
+/* FOOTER */
+.footerArea {
+	padding: 30px 0 30px;
+	background: #545568;
+	background: -moz-linear-gradient(top, #545568 0%, #333551 100%);
+	background: -webkit-linear-gradient(top, #545568 0%,#333551 100%);
+	background: linear-gradient(to bottom, #545568 0%,#333551 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545568', endColorstr='#333551',GradientType=0 );
+	color: #bfbfbf;
+	text-align: center;
+	font-size: 11px;
+}
+.footerArea p:first-child {
+	margin: 0 0 20px;
+}
+.footerArea a {
+	color: #bfbfbf;
+}
+
+/* MARGIN */
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mb25{margin-bottom:25px;}
+.ml3p{margin-left:3%}
+.mr3p{margin-right:3%}
+/* PADDING */
+.pt20{padding-top:20px;}
+.pb30{padding-bottom:30px;}
+/* WIDTH */
+.w50{width:50%;}
