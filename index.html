@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Portfolio</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" type="text/css" href="/node_modules/fullpage.js/dist/fullpage.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/node_modules/fullpage.js/dist/fullpage.css"
+    />
     <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
 
-<body>
+  <body>
+    <div id="fullpage">
+      <div class="section">Some section</div>
+      <div class="section active">Some section</div>
+      <div class="section">Some section</div>
+      <div class="section">Some section</div>
+    </div>
 
+    <script>
+      $(document).ready(function() {
+        $("#fullpage").fullpage({
+          //options here
+          autoScrolling: true,
+          scrollHorizontally: true
+        });
 
+        //methods
+        $.fn.fullpage.setAllowScrolling(false);
+      });
+    </script>
 
+    <script src="/js/jquery-3.3.1.min.js"></script>
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="fullpage.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="/plugins/fullPage.js-master/vendors/scrolloverflow.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/fullpage.js/dist/fullpage.extensions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/plugins/fullPage.js-master/src/fullpage.js"
+    ></script>
+  </body>
 </html>
